@@ -1,0 +1,345 @@
+body {
+
+    margin: 0px;
+}
+
+.container_images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 100vw;
+
+}
+
+.image_1 {
+    height: 50%;
+    width: calc(670/1920 * 100%);
+}
+
+.image_2 {
+    height: 50%;
+    width: calc(580/1920 * 100%);
+}
+
+.image_3 {
+    height: 50%;
+    width: calc(670/1920 * 100%);
+}
+
+.image_4 {
+    height: 50%;
+    width: calc(670/1920 * 100%);
+}
+
+.image_5 {
+    height: 50%;
+    width: calc(580/1920 * 100%);
+}
+
+.image_6 {
+    height: 50%;
+    width: calc(670/1920 * 100%);
+}
+
+.upper-contur {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #121010;
+    opacity: 90%;
+}
+
+.button-1 {
+    margin-left: 80px;
+    height: 50px;
+    width: 180px;
+    background: #D31218;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.button-2 {
+    margin-right: 80px;
+    height: 50px;
+    width: 180px;
+    background: #D31218;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.phone {
+    margin-left: 150px;
+    margin-right: 30px;
+    height: 30px;
+    width: 191px;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.logo {
+    margin-left: 380px;
+    height: 50px;
+    width: 279px;
+}
+
+
+.left-contur {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    width: 80px;
+    height: calc(100% - 160px);
+    top: 80px;
+    background: #121010;
+    opacity: 90%;
+}
+
+.left_button{
+    height: 80px;
+    width: 80px;
+}
+
+.right-contur {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    height: calc(100% - 160px);
+    top: 80px;
+    background: #121010;
+    opacity: 90%;
+}
+
+.active_ellipse {
+    position: absolute;
+    margin-bottom: 305px;
+    height: 60px;
+    width: 170px;
+    border: 2px solid red;
+    right: 0px;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+    padding-right: 55px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    background: rgba(30, 33, 40, 0.8);
+border-radius: 3px 0px 0px 3px;
+}
+
+.ellipse {
+    height: 16px;
+    width: 16px;
+    border-radius: 8px;
+    background: #2C303C;
+    margin-bottom: 7px;
+}
+
+.ellipse:hover {
+    background: #D31218;
+}
+
+.line {
+    height: 22px;
+    margin-bottom: 5px;
+}
+
+
+.low-contur {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background: #121010;
+    opacity: 90%;
+    bottom: 0px;
+}
+
+.central_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    width: calc(100% - 160px);
+    height: calc(100% - 160px);
+}
+
+.central_container-item_1 {
+    height: 50%;
+    width: calc(50% - (330/1920 * 100%));
+    background: rgba(18, 20, 27, 0.8);
+    opacity: 80%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.central_container-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 160px;
+    margin-left: 40px;
+    height: 100px;
+    width: 100px;
+}
+
+.one {
+    position: relative;
+    height: 50%;
+    width: calc(670/1920 * 100%);
+}
+
+.pointer {
+    height: 8, 5px;
+    width: 22px;
+}
+
+.central_container-item_1:hover {
+    opacity: 20%;
+    color: #D31218;
+}
+
+.central_container-item_2 {
+    height: 50%;
+    width: calc(660/1920 * 100%);
+    background: rgba(18, 20, 27, 0.8);
+    opacity: 80%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.central_container-item_2:hover {
+    opacity: 20%;
+    color: #D31218;
+}
+
+.central_container-item_3 {
+    height: 50%;
+    width: calc(50% - (330/1920 * 100%));
+    background: rgba(18, 20, 27, 0.8);
+    opacity: 80%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.central_container-item_3:hover {
+    opacity: 20%;
+    color: #D31218;
+}
+
+.central_container-item_4 {
+    height: 50%;
+    width: calc(50% - (330/1920 * 100%));
+    background: rgba(18, 20, 27, 0.8);
+    opacity: 80%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.central_container-item_4:hover {
+    opacity: 20%;
+    color: #D31218;
+}
+
+.central_container-item_5 {
+    height: 50%;
+    width: calc(660/1920 * 100%);
+    background: rgba(18, 20, 27, 0.8);
+    opacity: 80%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.central_container-item_5:hover {
+    opacity: 20%;
+    color: #D31218;
+}
+
+.central_container-item_6 {
+    height: 50%;
+    width: calc(50% - (330/1920 * 100%));
+    background: rgba(18, 20, 27, 0.8);
+    opacity: 80%;
+    font-family: 'Uni Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.central_container-item_6:hover {
+    opacity: 20%;
+    color: #D31218;
+}
