@@ -1,0 +1,855 @@
+$width_100: 100vw;
+
+@mixin text_properties($ff, $fst, $fw, $fsz, $lh, $displ, $alI, $jc, $c, $tt) {
+    font-family: $ff;
+    font-style: $fst;
+    font-weight: $fw;
+    font-size: $fsz;
+    line-height: $lh;
+    display: $displ;
+    align-items: $alI;
+    justify-content: $jc;
+    color: $c;
+    text-transform: $tt;
+}
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.page_1 {
+    display: flex;
+    flex-direction: column;
+    width: $width_100;
+    height: 100vh;
+}
+
+.page_1_header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 110px;
+}
+
+.page_1_header_1 {
+    width: $width_100;
+    height: 30px;
+    @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, 0);
+    background: #57D9A6;
+}
+
+.page_1_header_2 {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #1C1C33;
+
+    img {
+        width: 130px;
+        height: 40px;
+        margin-left: 70px;
+        margin-right: 350px;
+    }
+
+    .page_1_header_2_item {
+        height: 40px;
+        @include text_properties('Source Sans Pro', normal, 400, 17px, 27px, flex, center, center, #F6F6F8, 0);
+        margin-left: 40px;
+        cursor: pointer;
+    }
+
+    .page_1_header_2_basket {
+        margin-left: 300px;
+        margin-right: 0px;
+        width: 56px;
+        height: 56px;
+    }
+}
+
+.page_1_content {
+    margin: 0px;
+    width: $width_100;
+    height: calc(100vh - 110px);
+    background: #23233B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        margin-right: 130px;
+        margin-top: 20px;
+        width: 580px;
+        height: 580px;
+    }
+
+    .page_1_content_info {
+        margin-left: 100px;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page_1_content_info_header {
+        width: 150px;
+        height: 40px;
+        @include text_properties('Source Sans Pro', normal, 400, 16px, 21px, flex, center, center, #F6F6F8, uppercase);
+        border-bottom: solid 2px #57D9A6;
+    }
+
+    h1 {
+        margin-top: 50px;
+        width: 500px;
+        @include text_properties('Source Sans Pro', normal, 700, 55px, 60px, flex, center, center, #F6F6F8, 0);
+    }
+
+    h2 {
+        margin-top: 20px;
+        width: 550px;
+        @include text_properties('Source Sans Pro', normal, 400, 22px, 33px, flex, center, center, #F6F6F8, 0);
+    }
+
+    span {
+        margin-top: 20px;
+        @include text_properties('Source Sans Pro', normal, 400, 17px, 27px, flex, center, flex-start, #B2B2BF, 0);
+    }
+
+    button {
+        width: 160px;
+        height: 60px;
+        background: #57D9A6;
+        border-radius: 4px;
+        border: none;
+        margin-top: 40px;
+        @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, uppercase);
+        cursor: pointer;
+    }
+}
+
+.page_2 {
+    width: $width_100;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #23233B;
+
+    h1 {
+        margin-bottom: 15px;
+        margin-top: 100px;
+        @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, flex, center, center, #F6F6F8, 0);
+    }
+
+    span {
+        width: 650px;
+        margin-top: 30px;
+        @include text_properties('Source Sans Pro', normal, 400, 22px, 33px, flex, center, center, #F6F6F8, 0);
+    }
+
+    button {
+        margin-top: 30px;
+        width: 210px;
+        height: 60px;
+        border: none;
+        background: #57D9A6;
+        border-radius: 4px;
+        @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, uppercase);
+    }
+}
+
+.page_2_container {
+    margin-top: 50px;
+    width: 1250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .page_2_container_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 390px;
+        height: 420px;
+        background: #FFFFFF;
+
+        img {
+            width: 390px;
+            height: 190px;
+        }
+
+        h1 {
+            margin-bottom: 0px;
+            margin-top: 20px;
+            margin-left: 20px;
+            @include text_properties('Source Sans Pro', normal, 400, 24px, 29px, 0, 0, 0, #1C1C33, 0);
+            width: 280px;
+        }
+
+        h2 {
+            margin-top: 8px;
+            margin-left: 20px;
+            @include text_properties('Source Sans Pro', normal, 400, 17px, 27px, 0, 0, 0, #4E4E65, 0);
+        }
+
+        .price_container {
+            display: flex;
+            flex-direction: row;
+            margin-top: 5px;
+            margin-left: 20px;
+            justify-content: flex-start;
+
+            .price_old {
+                @include text_properties('Source Sans Pro', normal, 400, 22px, 27px, 0, 0, 0, #B2B2BF, 0);
+                margin-right: 8px;
+            }
+
+            .price_new {
+                @include text_properties('Source Sans Pro', normal, 400, 22px, 27px, 0, 0, 0, #1C1C33, 0);
+            }
+        }
+
+        p {
+            margin-left: 20px;
+            margin-top: 20px;
+            align-self: baseline;
+            @include text_properties('Source Sans Pro', normal, 400, 16px, 21px, flex, center, flex-start, #57D9A6, uppercase);
+        }
+    }
+}
+
+.page_3 {
+    display: flex;
+    flex-direction: row;
+    width: $width_100;
+    height: 660px;
+    background: #1C1C33;
+
+    img {
+        width: 50%;
+        height: 100%;
+    }
+
+    .page_3_text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 35px;
+
+        h1 {
+            margin-top: 140px;
+            margin-bottom: 5px;
+            @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, 0, 0, 0, #F6F6F8, 0);
+        }
+
+        hr {
+            margin-left: 0px;
+            margin-top: 10px;
+        }
+
+        span {
+            margin-top: 40px;
+            width: 610px;
+            @include text_properties('Source Sans Pro', normal, 400, 22px, 33px, 0, 0, 0, #F6F6F8, 0);
+        }
+
+        button {
+            margin-top: 50px;
+            width: 160px;
+            height: 60px;
+            @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, uppercase);
+            border: none;
+            background: #57D9A6;
+            border-radius: 4px;
+        }
+    }
+}
+
+.page_4 {
+    width: $width_100;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+
+    h1 {
+        margin-bottom: 15px;
+        margin-top: 100px;
+        @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, flex, center, center, #1C1C33, 0);
+    }
+
+    span {
+        width: 650px;
+        margin-top: 30px;
+        @include text_properties('Source Sans Pro', normal, 400, 22px, 33px, flex, center, center, #4E4E65, 0);
+    }
+
+    button {
+        margin-top: 30px;
+        width: 210px;
+        height: 60px;
+        background: #57D9A6;
+        border: none;
+        border-radius: 4px;
+        @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, uppercase);
+    }
+}
+
+.page_4_container {
+    margin-top: 50px;
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .page_4_container_item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 330px;
+        height: 270px;
+        background: #FFFFFF;
+
+        h1 {
+            margin-bottom: 0px;
+            margin-top: 20px;
+            margin-left: 20px;
+            @include text_properties('Source Sans Pro', normal, 700, 24px, 29px, flex, 0, flex-start, #1C1C33, 0);
+            width: 280px;
+        }
+
+        h2 {
+            margin-top: 8px;
+            margin-left: 20px;
+            @include text_properties('Source Sans Pro', normal, 400, 17px, 27px, 0, 0, 0, #4E4E65, 0);
+        }
+
+        p {
+            margin-left: 20px;
+            margin-top: 20px;
+            align-self: baseline;
+            @include text_properties('Source Sans Pro', normal, 400, 16px, 21px, flex, center, flex-start, #57D9A6, uppercase);
+        }
+    }
+}
+
+.page_5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    background: #57D9A6;
+    width: $width_100;
+    height: 506px;
+
+    .page_5_stars {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 80px;
+        width: 155px;
+
+        img {
+            height: 29px;
+            width: 30.5px;
+        }
+    }
+
+    h1 {
+        width: 1000px;
+        margin-top: 45px;
+        @include text_properties('Source Sans Pro', italic, 400, 28px, 42px, flex, center, center, #1C1C33, 0);
+    }
+
+    span {
+        margin-top: 45px;
+        @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #4E4E65, 0);
+    }
+
+    .page_5_slider {
+        margin-top: 50px;
+        display: flex;
+        width: 45px;
+        justify-content: space-between;
+
+        .page_5_slider_active {
+            height: 18px;
+            width: 18px;
+            background: #222222;
+            border-radius: 9px;
+        }
+
+        .page_5_slider_passive {
+            height: 18px;
+            width: 18px;
+            background: rgba(34, 34, 34, 0.4);
+            ;
+            border-radius: 9px;
+        }
+    }
+}
+
+.page_6 {
+    width: $width_100;
+    height: 822px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #1C1C33;
+
+    .page_6_container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 1300px;
+        height: 600px;
+
+        img {
+            height: 100%;
+            width: 600px;
+        }
+
+        .page_6_text {
+            height: 100%;
+            width: 600px;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                margin-top: 150px;
+                margin-bottom: 10px;
+                @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, 0, 0, 0, #F6F6F8, 0);
+            }
+
+            hr {
+                margin: 0px;
+            }
+
+            span {
+                width: 548px;
+                margin-top: 50px;
+                @include text_properties('Source Sans Pro', normal, 400, 22px, 33px, 0, 0, 0, #F6F6F8, 0);
+            }
+
+            button {
+                margin-top: 50px;
+                height: 60px;
+                width: 175px;
+                background: #57D9A6;
+                border-radius: 4px;
+                border: none;
+                @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, uppercase);
+            }
+        }
+    }
+}
+
+.page_7 {
+    position: relative;
+    width: $width_100;
+    height: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F5F5F5;
+
+
+    h1 {
+        margin-bottom: 15px;
+        margin-top: 100px;
+        @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, flex, center, center, #1C1C33, 0);
+    }
+
+    span {
+        width: 650px;
+        margin-top: 30px;
+        @include text_properties('Source Sans Pro', normal, 400, 22px, 33px, flex, center, center, #4E4E65, 0);
+    }
+
+    button {
+        margin-top: 30px;
+        width: 210px;
+        height: 60px;
+        background: #57D9A6;
+        border: none;
+        border-radius: 4px;
+        @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, flex, center, center, #1C1C33, uppercase);
+    }
+
+    .page_7_container {
+        margin-top: 50px;
+        width: 1250px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .page_7_container_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 390px;
+            height: 400px;
+            background: #FFFFFF;
+
+            img {
+                width: 390px;
+                height: 190px;
+            }
+
+            h1 {
+                margin-bottom: 0px;
+                margin-top: 20px;
+                margin-left: 20px;
+                @include text_properties('Source Sans Pro', normal, 400, 17px, 27px, 0, 0, 0, #4E4E65, 0);
+            }
+
+            h2 {
+                margin-bottom: 0px;
+                margin-top: 22px;
+                margin-left: 20px;
+                width: 319px;
+                @include text_properties('Source Sans Pro', normal, 400, 24px, 29px, 0, 0, 0, #1C1C33, 0);
+            }
+
+            p {
+                margin-top: 8px;
+                margin-left: 20px;
+                @include text_properties('Source Sans Pro', normal, 400, 17px, 27px, 0, 0, 0, #4E4E65, 0);
+            }
+        }
+    }
+}
+
+.page_8 {
+    position: relative;
+    height: 350px;
+    width: $width_100;
+    display: flex;
+    flex-direction: column;
+
+    .page_8_upper {
+        height: 175px;
+        width: $width_100;
+        background: #F5F5F5;
+    }
+
+    .page_8_lower {
+        height: 175px;
+        width: $width_100;
+        background: #1C1C33;
+    }
+
+    .page_8_between_container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .page_8_between_item {
+            height: 350px;
+            width: 80%;
+            background: #57D9A6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h1 {
+                margin-top: 75px;
+                @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, flex, center, center, #1C1C33, 0);
+            }
+
+            .page_8_input_container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 60px;
+                width: 560px;
+                height: 64px;
+
+                input {
+                    background: none;
+                    width: 400px;
+                    border: 1px solid #1C1C33;
+                    border-radius: 4px;
+                    padding-left: 19px;
+                    @include text_properties('Source Sans Pro', normal, 700, 20px, 53px, flex, center, center, #1C1C33, 0);
+                }
+
+                button {
+                    border: none;
+                    width: 115px;
+                    height: 64px;
+                    background: #1C1C33;
+                    border-radius: 4px;
+                    @include text_properties('Source Sans Pro', normal, 700, 20px, 53px, flex, center, center, #57D9A6, 0);
+                }
+            }
+        }
+    }
+
+}
+
+.page_9 {
+    width: $width_100;
+    height: 700px;
+    background: #1C1C33;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        margin-top: 140px;
+        margin-left: 80px;
+        width: 135px;
+        height: 44px;
+    }
+}
+
+.page_9_container {
+    margin-top: 70px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .page_9_container_column_1 {
+        display: flex;
+        flex-direction: column;
+        h1{
+            @include text_properties('Source Sans Pro', normal, 400, 16px, 21px, 0, 0, 0, #F6F6F8, uppercase);
+        }
+        p{
+            margin-top: 10px;
+            @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, 0, 0, 0, #F6F6F8, 0);
+        }
+    }
+    .page_9_container_column_2 {
+        margin-left: 150px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            @include text_properties('Source Sans Pro', normal, 400, 16px, 21px, 0, 0, 0, #F6F6F8, uppercase);
+        }
+        p{
+            margin-top: 10px;
+            @include text_properties('Source Sans Pro', normal, 400, 18px, 27px, 0, 0, 0, #F6F6F8, 0);
+        }
+    }
+    .page_9_container_column_3{
+        margin-left: 150px;
+        display: flex;
+        flex-direction: column;
+        h1{
+            @include text_properties('Source Sans Pro', normal, 700, 16px, 21px, 0, 0, 0, #F6F6F8, uppercase);
+        }
+        .page_9_container_column_3_container{
+            margin-top: 23px;
+            width: 305px;
+            height: 48px;
+            display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            margin: 0px;
+            height: 48px;
+            width: 48px;
+        }
+        }
+    }
+}
+footer{
+    height: 56px;
+    width: $width_100;
+    background: #23233B;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    h1{
+        margin-left: 30px;
+        @include text_properties('Source Sans Pro', normal, 400, 16px, 24px, 0, 0, 0, #B2B2BF, 0);
+    }
+}
+
+
+
+@media (max-width: 1400px) {
+    .page_1_content {
+        margin: 0px;
+        width: $width_100;
+        background: #23233B;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .page_2 {
+        width: $width_100;
+        height: 2300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #23233B;
+
+        h1 {
+            margin-bottom: 15px;
+            margin-top: 600px;
+            @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, flex, center, center, #F6F6F8, 0);
+        }
+    }
+
+    .page_2_container {
+        margin-top: 50px;
+        width: 390px;
+        height: 1300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .page_3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 1100px;
+        background: #1C1C33;
+
+        img {
+            width: 100%;
+            height: 50%;
+        }
+
+        .page_3_text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 35px;
+        }
+    }
+
+    .page_4 {
+        width: $width_100;
+        height: 1400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F5F5F5;
+
+        h1 {
+            margin-bottom: 15px;
+            margin-top: 100px;
+            @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, flex, center, center, #1C1C33, 0);
+        }
+    }
+
+    .page_4_container {
+        margin-top: 50px;
+        width: 390px;
+        height: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page_5 {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        background: #57D9A6;
+        width: $width_100;
+        height: 506px;
+
+        h1 {
+            width: 600px;
+            margin-top: 45px;
+            @include text_properties('Source Sans Pro', italic, 400, 28px, 42px, flex, center, center, #1C1C33, 0);
+        }
+
+        .page_5_slider {
+            position: absolute;
+            right: 40px;
+            top: 200px;
+            display: flex;
+            flex-direction: column;
+            height: 45px;
+            justify-content: space-between;
+        }
+    }
+
+    .page_6 {
+        width: $width_100;
+        height: 1250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #1C1C33;
+
+        .page_6_container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 620px;
+            height: 1200px;
+
+            img {
+                height: 600px;
+                width: 620px;
+            }
+
+            .page_6_text {
+                height: 600px;
+                width: 620px;
+                display: flex;
+                flex-direction: column;
+
+                h1 {
+                    margin-top: 30px;
+                    margin-bottom: 10px;
+                    @include text_properties('Source Sans Pro', normal, 700, 44px, 53px, 0, 0, 0, #F6F6F8, 0);
+                }
+            }
+        }
+    }
+
+    .page_7 {
+        width: $width_100;
+        height: 2200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #F5F5F5;
+
+        .page_7_container {
+            margin-top: 50px;
+            width: 390px;
+            height: 1300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    .page_9 {
+        width: $width_100;
+        height: 800px;
+        background: #1C1C33;
+        display: flex;
+        flex-direction: column;
+    }
+}

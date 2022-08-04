@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro ExtraLight), local(SourceSansPro-ExtraLight), url("sourcesansproextralight.fd6df0ee.woff2") format("woff2"), url("sourcesansproextralight.94192653.woff") format("woff"), url("sourcesansproextralight.608a716c.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro ExtraLight Italic), local(SourceSansPro-ExtraLightIt), url("sourcesansproextralightitalic.7f53b1f7.woff2") format("woff2"), url("sourcesansproextralightitalic.008598ff.woff") format("woff"), url("sourcesansproextralightitalic.9d7e296c.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Light), local(SourceSansPro-Light), url("sourcesansprolight.dcf9bee2.woff2") format("woff2"), url("sourcesansprolight.577359ab.woff") format("woff"), url("sourcesansprolight.d071950e.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Light Italic), local(SourceSansPro-LightIt), url("sourcesansprolightitalic.ffa49b4a.woff2") format("woff2"), url("sourcesansprolightitalic.6a223645.woff") format("woff"), url("sourcesansprolightitalic.62a0b6d1.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro), local(SourceSansPro-Regular), url("sourcesanspro.c5fb6e6a.woff2") format("woff2"), url("sourcesanspro.4e2d0a82.woff") format("woff"), url("sourcesanspro.041190c9.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Italic), local(SourceSansPro-It), url("sourcesansproitalic.dc43e13d.woff2") format("woff2"), url("sourcesansproitalic.e6ac681e.woff") format("woff"), url("sourcesansproitalic.fdc5055a.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Semibold), local(SourceSansPro-Semibold), url("sourcesansprosemibold.84595a79.woff2") format("woff2"), url("sourcesansprosemibold.7c841ceb.woff") format("woff"), url("sourcesansprosemibold.2e484f7e.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Semibold Italic), local(SourceSansPro-SemiboldIt), url("sourcesansprosemibolditalic.f0527419.woff2") format("woff2"), url("sourcesansprosemibolditalic.f7b28f6f.woff") format("woff"), url("sourcesansprosemibolditalic.ad1c22e8.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Bold), local(SourceSansPro-Bold), url("sourcesansprobold.c8bf3ac1.woff2") format("woff2"), url("sourcesansprobold.c770f6f3.woff") format("woff"), url("sourcesansprobold.34af6ad8.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Bold Italic), local(SourceSansPro-BoldIt), url("sourcesansprobolditalic.f000d7aa.woff2") format("woff2"), url("sourcesansprobolditalic.bb17113e.woff") format("woff"), url("sourcesansprobolditalic.43d51db3.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Black), local(SourceSansPro-Black), url("sourcesansproblack.251243a2.woff2") format("woff2"), url("sourcesansproblack.e999235d.woff") format("woff"), url("sourcesansproblack.41335619.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Source Sans Pro;
+  src: local(Source Sans Pro Black Italic), local(SourceSansPro-BlackIt), url("sourcesansproblackitalic.d13705c1.woff2") format("woff2"), url("sourcesansproblackitalic.2da2f20e.woff") format("woff"), url("sourcesansproblackitalic.cf55379e.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=index.65e6dcd8.css.map */
